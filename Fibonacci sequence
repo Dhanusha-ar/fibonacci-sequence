@@ -1,0 +1,22 @@
+package com.fibonacci;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		System.out.println("enter the limit for the fabonacci series");
+		Scanner input=new Scanner(System.in);
+		int limit=input.nextInt();
+		System.out.println("fabonacci seies for the given limit :");
+		int number1=0;
+		int number2=1;
+		System.out.println(number1);
+		System.out.println(number2);
+		for(int i=1;i<=limit;i++)
+		{
+		    int sum=number1+number2;
+		    number1=number2;
+		    number2=sum;
+		 System.out.println(sum);
+		 }   
+		}}
